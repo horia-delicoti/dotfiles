@@ -5,6 +5,17 @@
 declare -r GITHUB_REPOSITORY="horia-delicoti/dotfiles"
 declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/master"
 
+download() {
+
+    local url="$1"
+    local output"$2"
+
+    wget -qO "$output" "$url" &> /dev/null
+    #     |└─ write output to file
+    #     └─ "quite" - don't show wget's output
+
+    return 1
+}
 
 download_utils() {
 
@@ -17,7 +28,6 @@ download_utils() {
 
     return 1
 }
-
 
 # -----------------------------------------------
 # | Main                                        |
