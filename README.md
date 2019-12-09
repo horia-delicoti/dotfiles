@@ -1,5 +1,7 @@
 # dotfiles
 
+dotfiles that I start when I set up a new environment.
+
 ## Setup
 
 | OS | Snippet |
