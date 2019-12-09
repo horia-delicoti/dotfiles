@@ -7,10 +7,18 @@ declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/m
 
 download() {
 
+    # local variable is visible only within the block of code
     local url="$1"
     local output"$2"
 
-    wget -qO "$output" "$url" &> /dev/null
+    # &> /dev/null - writing the output to /dev/null
+    # -------------------------------------------------
+    # File              C IDENTIFIER    FILE DESCRIPTOR
+    # Standard Input    stdin           0
+    # Standard Output   stdout          1
+    # Standard Error    stderr          2
+    # -------------------------------------------------
+    wget -qO "$output" "$url" $> /dev/null
     #     |└─ write output to file
     #     └─ "quite" - don't show wget's output
 
@@ -19,13 +27,14 @@ download() {
 
 download_utils() {
 
+    # local variables is visible only within the block of code
     local tmpFile=""
 
     # mktemp - creates  a  temporary  file  or  directory
     tmpFile="$(mktemp /tmp/XXXXX)"
-    
-    echo $tmpFile
 
+    download $DOTFILES_TARBALL_URL $tmpFile
+    
     return 1
 }
 
