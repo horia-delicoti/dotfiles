@@ -11,3 +11,6 @@ dotfiles that I start when I set up a new environment.
 ## License
 
 The code is available under the [MIT license](LICENSE.txt)
+
+## Thanks
+Dotfiles inspired by [alrra](https://github.com/alrra/dotfiles)
