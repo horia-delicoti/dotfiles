@@ -18,7 +18,7 @@ download() {
 
     # local variable is visible only within the block of code
     local url="$1"
-    local output"$2"
+    local output="$2"
 
     if command -v "curl" &> /dev/null; then
 
