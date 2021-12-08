@@ -231,7 +231,7 @@ main() {
     # Ensure the OS is supported and
     # it's above the required version.
 
-    verify_os \
+   verify_os \
         || exit 1
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
