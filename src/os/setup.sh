@@ -252,7 +252,6 @@ main() {
     printf "%s" "${BASH_SOURCE[0]}" | grep "setup.sh" &> /dev/null \
         || download_dotfiles
 
-    ##
 }
 
 main "$@"
