@@ -1,16 +1,12 @@
-# dotfiles
-
-dotfiles that I start when I set up a new environment.
+# My dotfiles
+=============
 
 ## Setup
 
 | OS | Snippet |
 |:---|:---|
-| `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/horia-delicoti/dotfiles/master/src/os/setup.sh)"` |
+| `macOS` | `bash -c "$(curl -LsS https://raw.github.com/horia-delicoti/dotfiles/master/src/os/setup.sh)"` |
 
 ## License
 
 The code is available under the [MIT license](LICENSE.txt)
-
-## Thanks
-Dotfiles inspired by [alrra](https://github.com/alrra/dotfiles)
