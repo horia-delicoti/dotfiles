@@ -10,6 +10,6 @@ print_in_purple "\n   Miscellaneous Tools\n\n"
 
 brew_install "ShellCheck" "shellcheck"
 
-if [ -d "$HOME/.nvm" ]; then
-    #brew_install "Yarn" "yarn"
-fi
+#if [ -d "$HOME/.nvm" ]; then
+#    brew_install "Yarn" "yarn"
+#fi
