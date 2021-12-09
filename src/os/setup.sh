@@ -254,19 +254,19 @@ main() {
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    ./create_directories.sh
+#    ./create_directories.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    ./create_symbolic_links.sh "$@"
+#    ./create_symbolic_links.sh "$@"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    ./create_local_config_files.sh
+#    ./create_local_config_files.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     
-    ./installs/main.sh
+#    ./installs/main.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
