@@ -14,8 +14,8 @@ execute "defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool
 execute "defaults write com.apple.menuextra.battery ShowPercent -string 'YES'" \
     "Show battery percentage from the menu bar"
 
-execute "sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true" \
-    "Show language menu in the top right corner of the boot screen"
+#execute "sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true" \
+#    "Show language menu in the top right corner of the boot screen"
 
 execute "defaults write com.apple.CrashReporter UseUNC 1" \
     "Make crash reports appear as notifications"
@@ -48,7 +48,7 @@ execute "defaults write -g AppleFontSmoothing -int 2" \
 execute "defaults write -g AppleShowScrollBars -string 'Always'" \
     "Always show scrollbars"
 
-execute "defaults write -g NSAutomaticWindowAnimationsEnabled -bool false" \
+execute "defaults write -g NSAutomaticWindowAnimationsEnabled -bool true" \
     "Disable window opening and closing animations."
 
 execute "defaults write -g NSDisableAutomaticTermination -bool true" \
@@ -72,7 +72,7 @@ execute "defaults write -g PMPrintingExpandedStateForPrint -bool true" \
 execute "defaults write -g QLPanelAnimationDuration -float 0" \
     "Disable opening a Quick Look window animations."
 
-execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false" \
+execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool true" \
     "Disable resume system-wide"
 
 #execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'Laptop' && \
@@ -81,8 +81,8 @@ execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bo
 #         sudo scutil --set LocalHostName 'laptop'" \
 #    "Set computer name"
 
-execute "sudo systemsetup -setrestartfreeze on" \
-    "Restart automatically if the computer freezes"
+#execute "sudo systemsetup -setrestartfreeze on" \
+#    "Restart automatically if the computer freezes"
 
 #execute "sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist ControllerPowerState 0 && \
 #         sudo launchctl unload /System/Library/LaunchDaemons/com.apple.blued.plist && \
