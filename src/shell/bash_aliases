@@ -45,4 +45,5 @@ alias t="tmux"
 
 # Load OS specific configs.
 
-. "$OS/bash_aliases"
+#. "$OS/bash_aliases"
+. "$HOME/projects/dotfiles/src/shell/macos/bash_aliases"
