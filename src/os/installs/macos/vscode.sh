@@ -24,6 +24,7 @@ install_plugin "EditorConfig" "EditorConfig.EditorConfig"
 install_plugin "File Icons" "vscode-icons-team.vscode-icons"
 install_plugin "MarkdownLint" "DavidAnson.vscode-markdownlint"
 install_plugin "Vim" "vscodevim.vim"
+install_plugin "Terraform" "hashicorp.terraform"
 
 # Close VSCode
 osascript -e 'quit app "Visual Studio Code"'
