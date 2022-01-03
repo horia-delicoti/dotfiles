@@ -41,6 +41,10 @@ alias path='printf "%b\n" "${PATH//:/\\n}"'
 alias t="tmux"
 #alias y="yarn"
 
+# macOS added Python 2.7 to the distribution for compatibility reasons. I installed virtualenv but I don't have "platformdirs",
+# so creating a virtualenv fails. This alias uses the python3's virtualenv
+alias virtualenv="python3 -m virtualenv"
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Load OS specific configs for MacOS
