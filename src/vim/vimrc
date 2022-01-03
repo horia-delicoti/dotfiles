@@ -77,14 +77,6 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " Enable error syntax check: https://vimawesome.com/plugin/syntastic
-"   set statusline+=%#warningmsg#
-"   set statusline+=%{SyntasticStatuslineFlag()}
-"   set statusline+=%*
-
-"   let g:syntastic_always_populate_loc_list = 1
-"   let g:syntastic_auto_loc_list = 1
-"   let g:syntastic_check_on_open = 1
-"   let g:syntastic_check_on_wq = 0
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
@@ -94,11 +86,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'dense-analysis/ale'
 
   Plug 'preservim/nerdtree'
-  
-  Plug 'scrooloose/syntastic'
+
+  Plug 'vim-syntastic/syntastic'
 
   Plug 'hashivim/vim-terraform'
 
+  Plug 'juliosueiras/vim-terraform-completion'
+  
 call plug#end()
 " }}}
 
@@ -126,19 +120,29 @@ augroup END
 
 " STATUS LINE ------------------------------------------------------------ {{{
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+
 " Clear status line when vimrc is reloaded.
-set statusline=
+"set statusline=
 
 " Status line left side.
-set statusline+=\ %F\ %M\ %Y\ %R
+"set statusline+=\ %F\ %M\ %Y\ %R
 
 " Use a divider to separate the left side from the right side.
-set statusline+=%=
+"set statusline+=%=
 
 " Status line right side.
-set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+"set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 
 " Show the status on the second to last line.
-set laststatus=2
+"set laststatus=2
 
 " }}}
+"
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
