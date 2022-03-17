@@ -25,6 +25,7 @@ install_plugin "File Icons" "vscode-icons-team.vscode-icons"
 install_plugin "MarkdownLint" "DavidAnson.vscode-markdownlint"
 install_plugin "Vim" "vscodevim.vim"
 install_plugin "Terraform" "hashicorp.terraform"
+install_plugin "Ansible" "redhat.ansible"
 
 # Close VSCode
 osascript -e 'quit app "Visual Studio Code"'
