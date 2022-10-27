@@ -12,7 +12,8 @@ brew_install "ShellCheck" "shellcheck"
 brew_install "Wget" "wget"
 brew_install "Terraform" "terraform"
 brew_install "Vagrant" "vagrant"
-#brew_install "Jmeter" "jmeter"
+brew_install "Docker" "docker"
+brew_install "Openvpn" "openvpn"
 
 #if [ -d "$HOME/.nvm" ]; then
 #    brew_install "Yarn" "yarn"
