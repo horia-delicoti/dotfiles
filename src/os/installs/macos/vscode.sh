@@ -26,6 +26,7 @@ install_plugin "MarkdownLint" "DavidAnson.vscode-markdownlint"
 install_plugin "Vim" "vscodevim.vim"
 install_plugin "Terraform" "hashicorp.terraform"
 install_plugin "Ansible" "redhat.ansible"
+install_plugin "Toml" "bungcip.better-toml"
 
 # Close VSCode
 osascript -e 'quit app "Visual Studio Code"'
