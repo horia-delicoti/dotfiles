@@ -26,3 +26,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./vscode.sh
 #./web_font_tools.sh
 ./whatsapp.sh
+./magnet.sh
