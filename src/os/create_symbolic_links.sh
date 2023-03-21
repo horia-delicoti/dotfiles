@@ -11,24 +11,24 @@ create_symlinks() {
 
         "shell/bash_aliases"
     #    "shell/bash_autocompletion"
-        "shell/bash_exports"
+    #    "shell/bash_exports"
     #    "shell/bash_functions"
     #    "shell/bash_logout"
-        "shell/bash_options"
+    #    "shell/bash_options"
         "shell/bash_profile"
     #    "shell/bash_prompt"
     #    "shell/bashrc"
-        "shell/curlrc"
+    #    "shell/curlrc"
     #    "shell/inputrc"
 
-        "git/gitattributes"
-        "git/gitconfig"
-        "git/gitignore"
+    #   "git/gitattributes"
+    #   "git/gitconfig"
+    #   "git/gitignore"
 
     #    "tmux/tmux.conf"
     
     #    "vim/vim"
-        "vim/vimrc"
+    #   "vim/vimrc"
 
     )
 

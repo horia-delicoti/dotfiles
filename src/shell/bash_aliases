@@ -20,6 +20,8 @@ alias mv="mv -iv"
 #             └─ prompt before overwriting an existing file
 
 #alias rm="rm -rf --"
+#              │└─ attempts to remove the files without prompting for confirmation (force)
+#              └─ attempt to remove the file hierarchy rooted in each file argument
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -27,14 +29,13 @@ alias mv="mv -iv"
 alias c="clear"
 alias ch="history -c && > ~/.bash_history"
 alias d="cd ~/Desktop"
-alias projects="cd ~/projects"
 alias sandbox="cd ~/sandbox"
 #alias e="vim --"
 #alias g="git"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ll="ls -l"
-alias m="man"
-alias map="xargs -n1"
+#alias m="man"
+#alias map="xargs -n1"
 #alias n="npm"
 alias path='printf "%b\n" "${PATH//:/\\n}"'
 #alias q="exit"

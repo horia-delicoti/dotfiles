@@ -7,7 +7,7 @@ declare -r GITHUB_REPOSITORY="horia-delicoti/dotfiles"
 declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/master"
 declare -r DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/master/src/os/utils.sh"
 
-declare dotfilesDirectory="$HOME/projects/dotfiles"
+declare dotfilesDirectory="$HOME/sanbox/dotfiles"
 declare skipQuestions=false
 
 # -----------------------
@@ -254,7 +254,7 @@ main() {
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-#    ./create_directories.sh
+    ./create_directories.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -266,7 +266,7 @@ main() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     
-#    ./installs/main.sh
+    ./installs/main.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
