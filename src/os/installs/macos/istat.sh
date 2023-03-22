@@ -33,7 +33,7 @@ is_istat_installed() {
 
 main() {
 
-    print_in_purple "   iStat Menus\n\n"
+    print_in_purple "\n   iStat Menus\n\n"
 
     install_istat
 

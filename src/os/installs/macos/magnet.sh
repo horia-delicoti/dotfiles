@@ -33,7 +33,7 @@ is_magnet_installed() {
 
 main() {
 
-    print_in_purple "   Magnet\n\n"
+    print_in_purple "\n   Magnet\n\n"
 
     install_magnet
 

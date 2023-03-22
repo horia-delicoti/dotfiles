@@ -33,7 +33,7 @@ is_utm_installed() {
 
 main() {
 
-    print_in_purple "   UTM Virtual Machines\n\n"
+    print_in_purple "\n   UTM Virtual Machines\n\n"
 
     install_utm
 

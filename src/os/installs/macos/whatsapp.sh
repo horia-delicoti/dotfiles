@@ -33,7 +33,7 @@ is_whatsapp_installed() {
 
 main() {
 
-    print_in_purple "   WhatsApp\n\n"
+    print_in_purple "\n   WhatsApp\n\n"
 
     install_whatsapp
 
