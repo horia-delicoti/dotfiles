@@ -28,3 +28,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./whatsapp.sh
 ./magnet.sh
 ./utm.sh
+./istat.sh
