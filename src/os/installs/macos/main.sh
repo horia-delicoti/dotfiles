@@ -27,3 +27,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 #./web_font_tools.sh
 ./whatsapp.sh
 ./magnet.sh
+./utm.sh
