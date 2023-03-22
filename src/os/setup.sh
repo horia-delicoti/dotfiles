@@ -7,7 +7,7 @@ declare -r GITHUB_REPOSITORY="horia-delicoti/dotfiles"
 declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/master"
 declare -r DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/master/src/os/utils.sh"
 
-declare dotfilesDirectory="$HOME/sanbox/dotfiles"
+declare dotfilesDirectory="$HOME/sandbox/dotfiles"
 declare skipQuestions=false
 
 # -----------------------
