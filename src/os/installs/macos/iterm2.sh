@@ -7,11 +7,17 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 install_ohmyzsh() {
 
-    printf "\n" | /bin/bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &> /dev/null
-    #  └─ simulate the ENTER keypress
+    if ! is_ohmyzsh_installed; then
+        printf "\n" | /bin/bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &> /dev/null
+        #  └─ simulate the ENTER keypress
+    fi
 
     print_result $? "ohmyzsh"
 
+}
+
+is_ohmyzsh_installed() {
+    [ -d "$HOME/.oh-my-zsh" ]
 }
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
