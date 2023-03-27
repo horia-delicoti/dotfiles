@@ -4,6 +4,8 @@
 #             set their attributes, modify and display their values. 
 # "-r"      - readonly; this is a rough equivalent of the C "const" type
 declare -r GITHUB_REPOSITORY="horia-delicoti/dotfiles"
+
+declare -r DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
 declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/master"
 declare -r DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/master/src/os/utils.sh"
 
