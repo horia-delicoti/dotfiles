@@ -42,38 +42,38 @@ execute "defaults write com.apple.screencapture type -string 'png'" \
 #         defaults write com.apple.screensaver askForPasswordDelay -int 0"\
 #    "Require password immediately after into sleep or screen saver mode"
 
-execute "defaults write -g AppleFontSmoothing -int 2" \
-    "Enable subpixel font rendering on non-Apple LCDs"
+#execute "defaults write -g AppleFontSmoothing -int 2" \
+#    "Enable subpixel font rendering on non-Apple LCDs"
 
-execute "defaults write -g AppleShowScrollBars -string 'Always'" \
-    "Always show scrollbars"
+#execute "defaults write -g AppleShowScrollBars -string 'Always'" \
+#    "Always show scrollbars"
 
 execute "defaults write -g NSAutomaticWindowAnimationsEnabled -bool true" \
     "Disable window opening and closing animations."
 
-execute "defaults write -g NSDisableAutomaticTermination -bool true" \
-    "Disable automatic termination of inactive apps"
+#execute "defaults write -g NSDisableAutomaticTermination -bool true" \
+#    "Disable automatic termination of inactive apps"
 
-execute "defaults write -g NSNavPanelExpandedStateForSaveMode -bool true" \
-    "Expand save panel by default"
+#execute "defaults write -g NSNavPanelExpandedStateForSaveMode -bool true" \
+#    "Expand save panel by default"
 
-execute "defaults write -g NSTableViewDefaultSizeMode -int 2" \
-    "Set sidebar icon size to medium"
+#execute "defaults write -g NSTableViewDefaultSizeMode -int 2" \
+#    "Set sidebar icon size to medium"
 
-execute "defaults write -g NSUseAnimatedFocusRing -bool false" \
-    "Disable the over-the-top focus ring animation"
+#execute "defaults write -g NSUseAnimatedFocusRing -bool false" \
+#    "Disable the over-the-top focus ring animation"
 
-execute "defaults write -g NSWindowResizeTime -float 0.001" \
-    "Accelerated playback when adjusting the window size."
+#execute "defaults write -g NSWindowResizeTime -float 0.001" \
+#    "Accelerated playback when adjusting the window size."
 
-execute "defaults write -g PMPrintingExpandedStateForPrint -bool true" \
-    "Expand print panel by default"
+#execute "defaults write -g PMPrintingExpandedStateForPrint -bool true" \
+#    "Expand print panel by default"
 
-execute "defaults write -g QLPanelAnimationDuration -float 0" \
-    "Disable opening a Quick Look window animations."
+#execute "defaults write -g QLPanelAnimationDuration -float 0" \
+#    "Disable opening a Quick Look window animations."
 
-execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool true" \
-    "Disable resume system-wide"
+#execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool true" \
+#    "Disable resume system-wide"
 
 #execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'Laptop' && \
 #         sudo scutil --set ComputerName 'laptop' && \

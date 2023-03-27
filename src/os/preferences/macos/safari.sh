@@ -22,13 +22,13 @@ execute "defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool f
     "Set search type to 'Contains' instead of 'Starts With'"
 
 execute "defaults write com.apple.Safari HomePage -string 'about:blank'" \
-    "Set home page to 'about:blank'"
+    "Set home page to 'google.com'"
 
 execute "defaults write com.apple.Safari IncludeInternalDebugMenu -bool true" \
     "Enable 'Debug' menu"
 
-#execute "defaults write com.apple.Safari ShowFavoritesBar -bool false" \
-#    "Hide bookmarks bar by default"
+ execute "defaults write com.apple.Safari ShowFavoritesBar -bool true" \
+     "Show bookmarks bar by default"
 
 execute "defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true" \
     "Show the full URL in the address bar"
