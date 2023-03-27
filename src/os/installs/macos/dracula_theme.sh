@@ -8,7 +8,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 install_dracula_theme() {
 
     declare -r OH_MY_ZSH_DIR="$HOME/.oh-my-zsh"
-    declare -r DRACULA_DIR="$OH_MY_ZSH_DIR/custom/dracula"
+    declare -r DRACULA_DIR="$OH_MY_ZSH_DIR/custom/plugins/dracula"
     declare -r DRACULA_GIT_REPO_URL="https://github.com/dracula/zsh.git"
 
     if ! is_dracula_installed; then
@@ -27,6 +27,27 @@ install_dracula_theme() {
 
 }
 
+install_zsh_autosuggestions() {
+
+    declare -r OH_MY_ZSH_DIR="$HOME/.oh-my-zsh"
+    declare -r ZSH_AUTOSUGGESTIONS_DIR="$OH_MY_ZSH_DIR/custom/plugins/zsh-autosuggestions"
+    declare -r ZSH_AUTOSUGGESTIONS_URL="https://github.com/zsh-users/zsh-autosuggestions"
+
+    if ! is_zsh_autosuggestions_installed; then
+
+        # Install the zsh autosuggestions repo
+        git clone --quiet $ZSH_AUTOSUGGESTIONS_URL $ZSH_AUTOSUGGESTIONS_DIR
+
+    fi
+
+    print_result $? "ZSH Autosuggestions Plugin"
+
+}
+
 is_dracula_installed() {
     [ -d "$DRACULA_DIR" ]
+}
+
+is_zsh_autosuggestions_installed() {
+    [ -d "$ZSH_AUTOSUGGESTIONS_DIR" ]
 }

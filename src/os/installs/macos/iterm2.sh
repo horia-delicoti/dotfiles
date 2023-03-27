@@ -32,6 +32,7 @@ main() {
 
     install_ohmyzsh
     install_dracula_theme
+    install_zsh_autosuggestions
 
 }
 
