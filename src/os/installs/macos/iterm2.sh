@@ -3,7 +3,8 @@
 
 cd "$(dirname "${BASH_SOURCE[0]}")" \
     && . "../../utils.sh" \
-    && . "./utils.sh"
+    && . "./utils.sh" \
+    && . "./dracula_theme.sh"
 
 install_ohmyzsh() {
 
@@ -12,7 +13,7 @@ install_ohmyzsh() {
         #  └─ simulate the ENTER keypress
     fi
 
-    print_result $? "ohmyzsh"
+    print_result $? "Oh My Zsh"
 
 }
 
@@ -25,13 +26,12 @@ is_ohmyzsh_installed() {
 main() {
 
     print_in_purple "\n   iterm2\n\n"
-    brew_install "iterm2" "iterm2" "--cask"
 
-    print_in_purple "\n   zsh\n\n"
+    brew_install "iterm2" "iterm2" "--cask"
     brew_install "zsh" "zsh"
 
-    print_in_purple "\n   ohmyzsh\n\n"
     install_ohmyzsh
+    install_dracula_theme
 
 }
 
