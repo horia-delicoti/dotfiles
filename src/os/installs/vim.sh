@@ -1,4 +1,7 @@
 #!/bin/bash
+# https://vi.stackexchange.com/questions/388/what-are-the-differences-between-the-vim-plugin-managers
+# https://vimawesome.com/plugin/syntastic
+# https://github.com/junegunn/vim-plug
 
 cd "$(dirname "${BASH_SOURCE[0]}")" \
     && . "../utils.sh"
@@ -7,21 +10,13 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 install_plugins() {
 
-    declare -r VIM_PACK_DIR="$HOME/.vim/pack"
-    declare -r MINPAC_DIR="$VIM_PACK_DIR/minpac/opt/minpac"
-    declare -r MINPAC_GIT_REPO_URL="https://github.com/k-takata/minpac.git"
+    declare -r PLUG_VIM="https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    # Install plugins.
+    # Install vim-plugins.
 
-    execute \
-        "rm -rf $VIM_PACK_DIR \
-            && git clone --quiet $MINPAC_GIT_REPO_URL $MINPAC_DIR" \
-        "Install plugins" \
-        || return 1
-
-    vim +PluginsSetup
+    printf "\n" | /bin/bash -c "$(curl -fsLo ~/.vim/autoload/plug.vim --create-dirs $PLUG_VIM)" &> /dev/null
 
 }
 

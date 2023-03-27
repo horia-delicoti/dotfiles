@@ -9,7 +9,7 @@ create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
 
-    #    "shell/bash_aliases"
+        "shell/bash_aliases"
     #    "shell/bash_autocompletion"
     #    "shell/bash_exports"
     #    "shell/bash_functions"
@@ -21,14 +21,14 @@ create_symlinks() {
     #    "shell/curlrc"
     #    "shell/inputrc"
 
-    #   "git/gitattributes"
-    #   "git/gitconfig"
-    #   "git/gitignore"
+        "git/gitattributes"
+        "git/gitconfig"
+        "git/gitignore"
 
     #    "tmux/tmux.conf"
     
     #    "vim/vim"
-    #    "vim/vimrc"
+        "vim/vimrc"
 
     )
 
