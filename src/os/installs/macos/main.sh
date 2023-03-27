@@ -8,10 +8,10 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 ./xcode.sh
 ./homebrew.sh
+./git.sh
 #./bash.sh
 ./iterm2.sh
 
-./git.sh
 #./../nvm.sh
 ./browsers.sh
 #./compression_tools.sh
@@ -23,9 +23,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 #./tmux.sh
 #./video_tools.sh
 #./../vim.sh
-./vscode.sh
+#./vscode.sh
 #./web_font_tools.sh
-./whatsapp.sh
-./magnet.sh
 ./utm.sh
 ./istat.sh

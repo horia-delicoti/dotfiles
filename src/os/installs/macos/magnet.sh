@@ -21,22 +21,10 @@ install_magnet() {
         "until is_magnet_installed; do \
             sleep 5; \
          done" \
-        "Magnet.app"
+        "Magnet"
 
 }
 
 is_magnet_installed() {
     [ -d "/Applications/Magnet.app" ]
 }
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-main() {
-
-    print_in_purple "\n   Magnet\n\n"
-
-    install_magnet
-
-}
-
-main

@@ -21,22 +21,10 @@ install_whatsapp() {
         "until is_whatsapp_installed; do \
             sleep 5; \
          done" \
-        "WhatsApp.app"
+        "WhatsApp"
 
 }
 
 is_whatsapp_installed() {
     [ -d "/Applications/WhatsApp.app" ]
 }
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-main() {
-
-    print_in_purple "\n   WhatsApp\n\n"
-
-    install_whatsapp
-
-}
-
-main

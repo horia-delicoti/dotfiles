@@ -21,22 +21,10 @@ install_utm() {
         "until is_utm_installed; do \
             sleep 5; \
          done" \
-        "UTM.app"
+        "UTM"
 
 }
 
 is_utm_installed() {
     [ -d "/Applications/UTM.app" ]
 }
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-main() {
-
-    print_in_purple "\n   UTM Virtual Machines\n\n"
-
-    install_utm
-
-}
-
-main

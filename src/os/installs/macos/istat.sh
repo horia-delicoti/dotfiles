@@ -21,22 +21,10 @@ install_istat() {
         "until is_istat_installed; do \
             sleep 5; \
          done" \
-        "iStat Menus.app"
+        "iStat Menus"
 
 }
 
 is_istat_installed() {
     [ -d "/Applications/iStat Menus.app" ]
 }
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-main() {
-
-    print_in_purple "\n   iStat Menus\n\n"
-
-    install_istat
-
-}
-
-main
