@@ -24,6 +24,17 @@ alias mv="mv -iv"
 #              └─ attempt to remove the file hierarchy rooted in each file argument
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# git
+
+alias ga='git add'
+alias gc='git commit --verbose'
+alias gbl='git blame -b -w'
+alias gd='git diff'
+alias gf='git fetch'
+alias gp='git push'
+alias gst='git status'
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 #alias :q="exit"
 alias c="clear"

@@ -61,7 +61,7 @@ install_iterm_dracula_theme() {
 }
 
 is_iterm_dracula_theme_installed() {
-    [ -d "$ITERM_DRACULA_THEME_DIR "]
+    [ -d "$ITERM_DRACULA_THEME_DIR" ]
 }
 
 is_dracula_installed() {
