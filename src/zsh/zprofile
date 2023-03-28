@@ -1,0 +1,2 @@
+# Running this command to add Homebrew to our PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"

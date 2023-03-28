@@ -31,6 +31,7 @@ create_symlinks() {
         "vim/vimrc"
 
         "zsh/zshrc"
+        "zsh/zprofile"
 
     )
 
