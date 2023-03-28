@@ -20,8 +20,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./misc.sh
 ./misc_tools.sh
 #./../npm.sh
-#./tmux.sh
+./tmux.sh
 #./video_tools.sh
 ./../vim.sh
-#./vscode.sh
+./vscode.sh
 #./web_font_tools.sh

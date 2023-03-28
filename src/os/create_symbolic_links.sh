@@ -30,6 +30,8 @@ create_symlinks() {
     #    "vim/vim"
         "vim/vimrc"
 
+        "zsh/zshrc"
+
     )
 
     local i=""
