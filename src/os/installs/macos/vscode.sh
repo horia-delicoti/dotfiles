@@ -27,6 +27,7 @@ install_plugin "Vim" "vscodevim.vim"
 install_plugin "Terraform" "hashicorp.terraform"
 install_plugin "Ansible" "redhat.ansible"
 install_plugin "Toml" "bungcip.better-toml"
+install_plugin "Dracula Official" "dracula-theme.theme-dracula"
 
 # Close VSCode
 osascript -e 'quit app "Visual Studio Code"'
