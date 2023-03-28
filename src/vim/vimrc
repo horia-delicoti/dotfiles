@@ -1,5 +1,11 @@
+" Getting started with vim
+" https://learnbyexample.github.io/vim_reference/Customizing-Vim.html
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
+
+" Same as set backspace=indent,eol,start; For more info: ":h 'backspace'"
+set backspace=2
 
 " --- General settings ---
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
