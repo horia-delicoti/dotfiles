@@ -31,8 +31,10 @@ main() {
     brew_install "zsh" "zsh"
 
     install_ohmyzsh
-    install_dracula_theme
+    install_zsh_dracula_theme
     install_zsh_autosuggestions
+
+    install_iterm_dracula_theme
 
 }
 
