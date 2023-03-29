@@ -14,6 +14,7 @@ brew_install "Wget" "wget"
 #brew_install "Docker" "docker"
 brew_install "Openvpn" "openvpn"
 #brew_install "Vagrant" "vagrant"
+brew_install "Hugo" "hugo"
 
 #if [ -d "$HOME/.nvm" ]; then
 #    brew_install "Yarn" "yarn"
