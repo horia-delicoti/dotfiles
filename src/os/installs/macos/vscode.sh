@@ -26,6 +26,7 @@ install_plugin "MarkdownLint" "DavidAnson.vscode-markdownlint"
 install_plugin "Vim" "vscodevim.vim"
 install_plugin "Terraform" "hashicorp.terraform"
 install_plugin "Ansible" "redhat.ansible"
+install_plugin "Jinja" "wholroyd.jinja"
 install_plugin "Toml" "bungcip.better-toml"
 install_plugin "Dracula Official" "dracula-theme.theme-dracula"
 
