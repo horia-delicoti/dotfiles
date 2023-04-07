@@ -28,6 +28,7 @@ install_plugin "Terraform" "hashicorp.terraform"
 install_plugin "Ansible" "redhat.ansible"
 install_plugin "Jinja" "wholroyd.jinja"
 install_plugin "Toml" "bungcip.better-toml"
+install_plugin "GitLens" "eamodio.gitlens"
 install_plugin "Dracula Official" "dracula-theme.theme-dracula"
 
 # Close VSCode
