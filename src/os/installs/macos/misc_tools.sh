@@ -17,6 +17,7 @@ brew_install "Go-Task" "go-task"
 brew_install "Openvpn" "openvpn"
 #brew_install "Vagrant" "vagrant"
 brew_install "Hugo" "hugo"
+brew_install "Nmap" "nmap"
 
 #if [ -d "$HOME/.nvm" ]; then
 #    brew_install "Yarn" "yarn"
