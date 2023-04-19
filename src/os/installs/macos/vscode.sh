@@ -31,6 +31,7 @@ install_plugin "Toml" "bungcip.better-toml"
 install_plugin "GitLens" "eamodio.gitlens"
 install_plugin "Dracula Official" "dracula-theme.theme-dracula"
 install_plugin "Language support for Vue 3" "vue.volar"
+install_plugin "Remote-SSH" "ms-vscode-remote.remote-ssh"
 
 # Close VSCode
 osascript -e 'quit app "Visual Studio Code"'
