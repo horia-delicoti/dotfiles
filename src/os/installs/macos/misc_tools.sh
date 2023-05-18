@@ -11,6 +11,7 @@ print_in_purple "\n   Miscellaneous Tools\n\n"
 
 #brew_install "ShellCheck" "shellcheck"
 brew_install "Wget" "wget"
+brew_install "Htop" "htop"
 brew_install "Go-Task" "go-task"
 brew_install "Terraform" "terraform"
 #brew_install "Docker" "docker"
