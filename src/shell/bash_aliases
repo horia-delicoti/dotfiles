@@ -122,3 +122,13 @@ alias software-update="sudo softwareupdate --install --all \
             && brew update \
             && brew upgrade \
             && brew cleanup"
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# System information about Mac
+
+alias hwinfo="system_profiler SPSoftwareDataType SPHardwareDataType"
+alias hwinfo-list="echo \"Usage:\n$ system_profiler <available_data_type>\n\" \
+            && system_profiler -listDataTypes"
+
