@@ -43,7 +43,7 @@ alias d="cd ~/Desktop"
 alias sandbox="cd ~/sandbox"
 #alias e="vim --"
 #alias g="git"
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip="curl -w \"\n\" ifconfig.me"
 alias ll="ls -l"
 #alias m="man"
 #alias map="xargs -n1"
@@ -52,6 +52,7 @@ alias path='printf "%b\n" "${PATH//:/\\n}"'
 #alias q="exit"
 alias t="tmux"
 #alias y="yarn"
+alias df="df -h"
 
 # macOS added Python 2.7 to the distribution for compatibility reasons. I installed virtualenv but I don't have "platformdirs",
 # so creating a virtualenv fails. This alias uses the python3's virtualenv
