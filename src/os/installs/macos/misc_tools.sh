@@ -21,6 +21,7 @@ brew_install "Hugo" "hugo"
 brew_install "Nmap" "nmap"
 brew_install "MTR" "mtr"
 brew_install "IPERF3" "iperf3"
+brew_install "TLDR" "tldr"
 
 #if [ -d "$HOME/.nvm" ]; then
 #    brew_install "Yarn" "yarn"
