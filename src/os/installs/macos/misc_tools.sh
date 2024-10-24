@@ -22,6 +22,7 @@ brew_install "Nmap" "nmap"
 brew_install "MTR" "mtr"
 brew_install "IPERF3" "iperf3"
 brew_install "TLDR" "tldr"
+brew_install "GIT-LFS" "git-lfs"
 
 #if [ -d "$HOME/.nvm" ]; then
 #    brew_install "Yarn" "yarn"
