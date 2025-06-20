@@ -18,11 +18,14 @@ brew_install "Terraform" "terraform"
 brew_install "Openvpn" "openvpn"
 #brew_install "Vagrant" "vagrant"
 brew_install "Hugo" "hugo"
-brew_install "Nmap" "nmap"
 brew_install "MTR" "mtr"
 brew_install "IPERF3" "iperf3"
 brew_install "TLDR" "tldr"
 brew_install "GIT-LFS" "git-lfs"
+
+# Cybersecurity tools
+brew_install "Nmap" "nmap"
+brew_install "NIKTO" "nikto"
 
 #if [ -d "$HOME/.nvm" ]; then
 #    brew_install "Yarn" "yarn"
